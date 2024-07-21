@@ -35,38 +35,11 @@
         nav {
             display: flex;
             gap: 20px;
-            align-items: center;
         }
-        nav > a {
+        nav a {
             color: #fff;
             text-decoration: none;
             font-size: 1.2em;
-            position: relative;
-        }
-        nav a:hover {
-            color: #ffcc00;
-        }
-        .dropdown {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #2d2d2d;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-            min-width: 150px;
-        }
-        .dropdown a {
-            display: block;
-            padding: 10px;
-            color: #fff;
-            text-decoration: none;
-        }
-        .dropdown a:hover {
-            background-color: #444;
-        }
-        nav > a:hover .dropdown {
-            display: block;
         }
         .hero {
             background: url('https://via.placeholder.com/1920x800') no-repeat center center/cover;
@@ -136,13 +109,8 @@
             <img src="image.png" alt="Logo Rift Rulers">
         </a>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="#">About
-                <div class="dropdown">
-                    <a href="about.html">About Us</a>
-                    <a href="teams.html">Teams</a>
-                </div>
-            </a>
+            <a href="index.html">Accueil</a>
+            <a href="about.html">À Propos</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
