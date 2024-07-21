@@ -3,62 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil e-sport - HezaMiu</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #fff;
-            background-image: url('https://th.bing.com/th/id/OIP.x34jNzMvRWvAIOkyB4vqkAHaEH?rs=1&pid=ImgDetMain');
-            background-size: cover;
-            background-attachment: fixed;
-            animation: fadeInBackground 2s ease-in-out;
-        }
-        @keyframes fadeInBackground {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        header {
-            background: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav {
-            text-align: center;
-            margin-top: 20px;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #1e90ff;
-            font-weight: bold;
-            transition: color 0.3s ease-in-out;
-        }
-        nav a:hover {
-            color: #87cefa;
-        }
-        footer {
-            background: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Accueil - HezaMiu</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Profil e-sport - HezaMiu</h1>
+        <div class="container">
+            <h1>HezaMiu</h1>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos de moi</a>
+                <a href="team.html">Mon Équipe</a>
+                <a href="contact.html">Me Contacter</a>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <a href="about.html">À propos de moi</a>
-        <a href="team.html">Mon Équipe</a>
-        <a href="contact.html">Me Contacter</a>
-    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Bienvenue sur mon site !</h2>
+            <p>Je suis HezaMiu, joueur de League of Legends et membre de l'équipe Rift Rulers.</p>
+        </div>
+    </section>
+    <section class="info">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <p>Découvrez plus sur mon parcours et mon équipe.</p>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2024 HezaMiu. Tous droits réservés.</p>
+        <div class="container">
+            <p>&copy; 2024 HezaMiu. Tous droits réservés.</p>
+        </div>
     </footer>
 </body>
 </html>
