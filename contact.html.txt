@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me Contacter - HezaMiu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>HezaMiu</h1>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos de moi</a>
+                <a href="team.html">Mon Équipe</a>
+                <a href="contact.html">Me Contacter</a>
+            </nav>
+        </div>
+    </header>
+    <section class="contact">
+        <div class="container">
+            <h2>Me Contacter</h2>
+            <p>Tu peux me retrouver sur ma chaîne Twitch ou rejoindre mon serveur Discord :</p>
+            <ul>
+                <li><a href="https://www.twitch.tv/HezaMiu" target="_blank">Ma Chaîne Twitch</a></li>
+                <li><a href="https://discord.gg/Hezaryus" target="_blank">Mon Discord</a></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 HezaMiu. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

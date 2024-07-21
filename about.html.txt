@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos de moi - HezaMiu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>HezaMiu</h1>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos de moi</a>
+                <a href="team.html">Mon Équipe</a>
+                <a href="contact.html">Me Contacter</a>
+            </nav>
+        </div>
+    </header>
+    <section class="about">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <p>Je suis HezaMiu, joueur passionné de League of Legends, actuellement classé Gold III. Je fais partie de l'équipe Rift Rulers. Découvrez mon parcours et mes réalisations.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 HezaMiu. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
