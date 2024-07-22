@@ -16,59 +16,80 @@
         header {
             display: flex;
             align-items: center;
-            justify-content: space-between;
             padding: 20px;
-            background-color: #000;
+            background-color: #333; /* Couleur du bandeau ajustée */
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.5);
         }
-        header a {
-            text-decoration: none;
-            color: #fff;
+        .header-logo {
+            flex-shrink: 0;
+        }
+        .header-nav {
+            display: flex;
+            justify-content: flex-start; /* Aligne les éléments à gauche */
+            position: relative; /* Positionnement relatif pour le menu déroulant */
+            margin-left: 700px; /* Ajustez cette valeur pour aligner avec le "C" de "chez" */
         }
         header img {
             width: 150px;
             height: auto;
         }
-        nav {
+        .nav-about {
+            position: relative;
             display: flex;
-            gap: 20px;
-            align-items: center;
-            position: relative;
-            margin-left: auto;
+            flex-direction: column; /* Aligne le lien "About" et le menu déroulant verticalement */
+            align-items: center; /* Centre horizontalement */
         }
-        nav > a {
-            color: #fff;
+        .nav-about > a {
+            color: #fff; /* Texte blanc par défaut */
             text-decoration: none;
-            font-size: 1.2em;
+            font-size: 2em; /* Augmente la taille de la police du texte */
             position: relative;
+            padding: 10px;
+            font-weight: bold;
+            transition: color 0.3s;
         }
-        nav a:hover {
-            color: #ffcc00;
+        .nav-about > a .part1,
+        .nav-about > a .part2 {
+            transition: color 0.3s;
+        }
+        .nav-about:hover > a .part1,
+        .nav-about:hover > a .part2,
+        .nav-about .dropdown {
+            color: transparent;
+        }
+        .nav-about:hover > a .part1 {
+            color: #000; /* Couleur noire pour "Abo" au survol */
+        }
+        .nav-about:hover > a .part2 {
+            color: #f00; /* Couleur rouge pour "ut" au survol */
         }
         .dropdown {
             display: none;
             position: absolute;
-            top: 100%;
+            top: 100%; /* Positionne le menu déroulant juste en dessous du lien "About" */
             left: 0;
-            background-color: #2d2d2d;
+            background-color: #fff; /* Couleur blanche pour le cadre */
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.5);
             min-width: 150px;
             z-index: 1000;
+            margin-top: 5px; /* Réduit l'espace entre le lien "About" et le menu déroulant */
         }
         .dropdown a {
             display: block;
             padding: 10px;
-            color: #fff;
+            color: #000; /* Texte noir pour le menu déroulant */
             text-decoration: none;
         }
         .dropdown a:hover {
             background-color: #444;
+            color: #fff; /* Texte blanc au survol */
         }
-        nav > a:hover .dropdown {
+        .nav-about:hover .dropdown {
             display: block;
         }
         .hero {
@@ -91,7 +112,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
-            justify-content: center;
+            justify-content: center; /* Centre les éléments de la grille */
             padding: 40px 20px;
         }
         .member {
@@ -135,19 +156,22 @@
 </head>
 <body>
     <header>
-        <a href="index.html">
-            <img src="image.png" alt="Logo Rift Rulers">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#">About
-                <div class="dropdown">
-                    <a href="about.html">About Us</a>
-                    <a href="teams.html">Teams</a>
-                </div>
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="image.png" alt="Logo Rift Rulers">
             </a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        </div>
+        <div class="header-nav">
+            <nav>
+                <div class="nav-about">
+                    <a href="#"><span class="part1">Abo</span><span class="part2">ut</span></a>
+                    <div class="dropdown">
+                        <a href="about.html">About us</a>
+                        <a href="teams.html">Teams</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <section class="hero">
@@ -159,26 +183,30 @@
 
     <section class="members">
         <div class="member">
-            <img src="https://via.placeholder.com/250x200" alt="Oner">
-            <h3>Oner</h3>
+            <img src="https://via.placeholder.com/250x200" alt="Ramoutcho">
+            <h3>Ramoutcho</h3>
+            <p>Toplaner</p>
+        </div>
+        <div class="member">
+            <img src="https://via.placeholder.com/250x200" alt="Fruity">
+            <h3>Fruity</h3>
             <p>Jungler</p>
         </div>
         <div class="member">
-            <img src="https://via.placeholder.com/250x200" alt="Faker">
-            <h3>Faker</h3>
+            <img src="https://via.placeholder.com/250x200" alt="Mouskette">
+            <h3>Mouskette</h3>
             <p>Midlaner</p>
         </div>
         <div class="member">
-            <img src="https://via.placeholder.com/250x200" alt="Gumayusi">
-            <h3>Gumayusi</h3>
+            <img src="https://via.placeholder.com/250x200" alt="Hezaryus">
+            <h3>Hezaryus</h3>
             <p>ADC</p>
         </div>
         <div class="member">
-            <img src="https://via.placeholder.com/250x200" alt="Keria">
-            <h3>Keria</h3>
+            <img src="https://via.placeholder.com/250x200" alt="Clairius">
+            <h3>Clairius</h3>
             <p>Support</p>
         </div>
-        <!-- Ajouter d'autres membres ici -->
     </section>
 
     <footer>
