@@ -90,16 +90,17 @@
         }
         footer {
             background-color: #222;
-            color: #999;
+            color: #fff;
             text-align: center;
             padding: 20px 0;
             border-top: 2px solid #ff0000;
         }
-        footer .copyright {
+        footer .copyright-wrapper {
             background-color: #000;
+            padding: 10px 0;
+        }
+        footer .copyright {
             color: #fff;
-            display: inline-block;
-            padding: 10px 20px;
         }
     </style>
 </head>
@@ -167,7 +168,9 @@
     </section>
 
     <footer>
-        <p><span class="copyright">&copy; 2024 Rift Rulers</span>. Tous droits réservés.</p>
+        <div class="copyright-wrapper">
+            <p class="copyright">&copy; 2024 Rift Rulers. Tous droits réservés.</p>
+        </div>
     </footer>
 </body>
 </html>
