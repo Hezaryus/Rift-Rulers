@@ -102,9 +102,44 @@
         footer .copyright {
             color: #fff;
         }
+        .top-bar {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+        .top-bar img {
+            height: 40px;
+            width: auto;
+        }
+        .top-bar .social-links {
+            display: flex;
+            align-items: center;
+        }
+        .top-bar .social-links a {
+            color: #fff;
+            margin-left: 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .top-bar .social-links a:hover {
+            color: #ff0000;
+        }
     </style>
 </head>
 <body>
+    <div class="top-bar">
+        <img src="images/logo-small.png" alt="Rift Rulers Logo">
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </div>
+
     <header>
         <img src="images/logo.png" alt="Rift Rulers Logo">
         <nav>
