@@ -3,103 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rift Rulers</title>
+    <title>Rift Rulers - Accueil</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="image.png" alt="Rift Rulers Logo">
-            <h1>Rift Rulers</h1>
+            <img src="logo.png" alt="Rift Rulers Logo">
         </div>
         <nav>
             <ul>
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#teams">Équipes</a></li>
-                <li><a href="#tournaments">Tournois</a></li>
-                <li><a href="#news">Actualités</a></li>
-                <li><a href="#shop">Boutique</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="equipe.html">Équipe</a></li>
+                <li><a href="matchs.html">Matchs</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="hero">
+    <section class="hero">
         <div class="hero-content">
-            <h2>Bienvenue chez Rift Rulers</h2>
-            <p>Où les meilleurs joueurs se rencontrent.</p>
-            <a href="#teams" class="btn">Rejoindre une équipe</a>
-            <a href="#tournaments" class="btn">Participer aux tournois</a>
+            <h1>Bienvenue aux Rift Rulers</h1>
+            <p>Les Maîtres du Rift !</p>
         </div>
     </section>
 
-    <section id="teams">
-        <h2>Nos Équipes</h2>
-        <div class="teams">
-            <div class="team animate">
-                <img src="images/team1.jpg" alt="Team 1">
-                <h3>Team Rift</h3>
-                <p>Spécialité : MOBA</p>
-                <a href="#" class="btn">Voir Plus</a>
+    <section class="about">
+        <h2>À propos de nous</h2>
+        <p>Les Rift Rulers sont une équipe de compétitions e-sportives avec une passion pour la domination du Rift. Notre mission est de conquérir les arènes et de montrer notre suprématie.</p>
+    </section>
+
+    <section class="players">
+        <h2>Nos joueurs</h2>
+        <div class="player-list">
+            <div class="player">
+                <img src="player1.jpg" alt="Joueur 1">
+                <h3>Joueur 1</h3>
+                <p>Rôle : Toplaner</p>
             </div>
-            <!-- Répéter pour plus d'équipes -->
-        </div>
-    </section>
-
-    <section id="tournaments">
-        <h2>Prochains Tournois</h2>
-        <div class="tournaments">
-            <div class="tournament animate">
-                <h3>Rift Clash 2024</h3>
-                <p>Date : 15 Août 2024</p>
-                <a href="#" class="btn">S'inscrire</a>
+            <div class="player">
+                <img src="player2.jpg" alt="Joueur 2">
+                <h3>Joueur 2</h3>
+                <p>Rôle : Jungler</p>
             </div>
-            <!-- Répéter pour plus de tournois -->
+            <!-- Ajouter d'autres joueurs -->
         </div>
     </section>
 
-    <section id="news">
-        <h2>Actualités et Annonces</h2>
-        <div class="news">
-            <article class="animate">
-                <h3>Nouvelle Saison Annoncée!</h3>
-                <p>Les détails de la nouvelle saison de Rift Rulers.</p>
-                <a href="#" class="btn">Lire la suite</a>
-            </article>
-            <!-- Répéter pour plus d'articles -->
-        </div>
+    <section class="matches">
+        <h2>Prochains matchs</h2>
+        <ul>
+            <li>26 Juillet 2024 - Rift Rulers vs Team A</li>
+            <li>2 Août 2024 - Rift Rulers vs Team B</li>
+            <!-- Ajouter d'autres matchs -->
+        </ul>
     </section>
 
-    <section id="shop">
-        <h2>Boutique Rift Rulers</h2>
-        <div class="shop">
-            <div class="product animate">
-                <img src="images/product1.jpg" alt="Produit 1">
-                <h3>Équipement Gaming</h3>
-                <p>Prix : 99.99€</p>
-                <a href="#" class="btn">Acheter</a>
-            </div>
-            <!-- Répéter pour plus de produits -->
-        </div>
+    <section class="news">
+        <h2>Actualités</h2>
+        <article>
+            <h3>Nouvelle victoire pour les Rift Rulers</h3>
+            <p>Nos joueurs ont brillamment remporté leur dernier match contre Team X...</p>
+            <a href="actualites.html">Lire plus</a>
+        </article>
+        <!-- Ajouter d'autres nouvelles -->
     </section>
 
     <footer>
-        <div class="footer-content">
-            <ul>
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="#">Politique de confidentialité</a></li>
-                <li><a href="#">Conditions d'utilisation</a></li>
-            </ul>
-            <p>Contact : <a href="mailto:contact@riftrulers.com">contact@riftrulers.com</a></p>
-            <p>Téléphone : 01 23 45 67 89</p>
-            <form>
-                <label for="newsletter">Inscrivez-vous à notre newsletter :</label>
-                <input type="email" id="newsletter" name="newsletter" placeholder="Votre email">
-                <button type="submit">S'abonner</button>
-            </form>
+        <p>&copy; 2024 Rift Rulers. Tous droits réservés.</p>
+        <div class="socials">
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
         </div>
     </footer>
-
-    <script src="main.js"></script>
 </body>
 </html>
